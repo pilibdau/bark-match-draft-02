@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bark-Match</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a789e9f98e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div class="header">Location</div>
-    <section class="searchbar__container">
-        <div class="searchbar__container">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="City, Country">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="notification">
-            <i class="fa-solid fa-bell"></i>
-        </div>
-    </section>
-    <section class="cards__container">
-        <div class="card active">
-            <img src="./images/jack-russell.png" alt="jack russel">
-        </div>
-        <div class="card active">
-            <img src="./images/chihuahua.webp" alt="chihuahua">
-        </div>
-        <div class="card active">
-            <img src="./images/spaniel.png" alt="spaniel">
-        </div>
-    </section>
-    <section class="navbar__container">
-        <i class="fa-solid fa-house"></i>
-        <i class="fa-solid fa-user-group"></i>
-        <i class="fa-solid fa-user-pen"></i>
-    </section>
+    <div class="content__container">
+        <div class="header">Location</div>
+        <section class="searchbar__container">
+            <div class="searchbar">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="City, Country">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </section>
+        <section class="cards__container">
+            <div class="card active">
+                <img src="./images/jack-russell.png" alt="jack russel">
+                <div class="card--detail__container">
+                    <div class="card--detail__name">Rocket</div>
+                    <div class="card--detail__age">4</div>
+                </div>
+            </div>
+            <div class="card active">
+                <img src="./images/chihuahua.webp" alt="chihuahua">
+                <div class="card--detail__container">
+                    <div class="card--detail__name">Chico</div>
+                    <div class="card--detail__age">7</div>
+                </div>
+            </div>
+            <div class="card active">
+                <img src="./images/spaniel.png" alt="spaniel">
+                <div class="card--detail__container">
+                    <div class="card--detail__name">Lenon</div>
+                    <div class="card--detail__age">2</div>
+                </div>
+            </div>
+        </section>
+        <section class="navbar__container">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-user-group"></i>
+            <i class="fa-solid fa-user-pen"></i>
+        </section>
+    </div>
 </body>
+
 </html>

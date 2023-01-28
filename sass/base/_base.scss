@@ -1,0 +1,25 @@
+:root {
+    --primary-dark: #0073D8;
+    --primary-light: #A2D6F9;
+    --accent-pink: #FD56CB;
+    --secondary-light: #FCF300;
+    --secondary-dark: #FFC600;
+    --dark-grey: #585858;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    // this define what 1 rem is
+    font-size: 62.5%; // 1 rem = 10px
+}
+
+body {
+    box-sizing: border-box;
+}
