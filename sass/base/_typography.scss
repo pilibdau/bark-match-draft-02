@@ -4,12 +4,18 @@
 }
 
 .header {
-    font-weight: 100;
     font-size: 2.4rem;
+    font-weight: 300;
     text-transform: uppercase;
-    color: var(--dark-grey);
+    color: var(--accent-pink);
 }
 
 ::placeholder {
     color:var(--primary-light);
 }
+
+.card {
+    color: var(--primary-dark);
+    text-transform: uppercase;
+}
+

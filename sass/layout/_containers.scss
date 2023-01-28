@@ -26,17 +26,7 @@
     margin:auto;
     border-radius: var(--radius);
     position: relative;
-    height: 80rem;
-}
-
-.card {
-    width: 95%;
-    padding: 1rem;
-    background-color: var(--white);
-    border-radius: var(--radius);
-    margin: 2rem auto;
-    box-shadow: var(--box-shadow);
-    position: absolute;
+    height: 63rem;
 }
 
 .navbar__container {
@@ -50,6 +40,14 @@
     }
 }
 
+.swipe__container {
+    display: flex;
+    width: 60%;
+    margin:auto;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
 
 .btn__notification--container {
     display: flex;
@@ -63,7 +61,8 @@
     }
 
     .cards__container {
-        height: 165vw;
+        width: 90%;
+        height: 140vw;
     }
 
 }

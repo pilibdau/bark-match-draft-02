@@ -27,13 +27,42 @@ body {
   font-size: 1.8rem; }
 
 .header {
-  font-weight: 100;
   font-size: 2.4rem;
+  font-weight: 300;
   text-transform: uppercase;
-  color: var(--dark-grey); }
+  color: var(--accent-pink); }
 
 ::placeholder {
   color: var(--primary-light); }
+
+.card {
+  color: var(--primary-dark);
+  text-transform: uppercase; }
+
+.card {
+  width: 95%;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  margin: 2rem auto;
+  box-shadow: var(--box-shadow);
+  position: absolute; }
+  .card--detail__container {
+    margin: 0.5rem 0.5rem;
+    font-weight: 900;
+    font-size: 2.4rem; }
+    .card--detail__container > * {
+      display: inline; }
+      .card--detail__container > *:not(:first-child) {
+        margin-left: 1rem; }
+  .card:nth-child(1) {
+    z-index: 3; }
+  .card:nth-child(2) {
+    z-index: 2;
+    transform: translateY(4rem) scale(90%); }
+  .card:nth-child(3) {
+    z-index: 1;
+    transform: translateY(8rem) scale(80%); }
 
 .input--text, button {
   border: none;
@@ -44,7 +73,25 @@ body {
 
 .input--text {
   margin-left: 1rem;
-  color: var(--primary-dark); }
+  color: var(--primary-dark);
+  width: 40%; }
+
+.swipe {
+  background-color: var(--white);
+  border-radius: 100rem;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin-bottom: 1rem; }
+
+@media screen and (max-width: 421px) {
+  .swipe {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2rem; } }
 
 img {
   width: 100%;
@@ -76,16 +123,7 @@ img {
   margin: auto;
   border-radius: var(--radius);
   position: relative;
-  height: 80rem; }
-
-.card {
-  width: 95%;
-  padding: 1rem;
-  background-color: var(--white);
-  border-radius: var(--radius);
-  margin: 2rem auto;
-  box-shadow: var(--box-shadow);
-  position: absolute; }
+  height: 63rem; }
 
 .navbar__container {
   display: flex;
@@ -94,6 +132,14 @@ img {
   color: var(--white); }
   .navbar__container > * {
     box-shadow: var(--box-shadow); }
+
+.swipe__container {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between; }
 
 .btn__notification--container {
   display: flex;
@@ -104,4 +150,5 @@ img {
   .content__container {
     max-height: 220vw; }
   .cards__container {
-    height: 165vw; } }
+    width: 90%;
+    height: 140vw; } }
