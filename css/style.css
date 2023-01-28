@@ -7,7 +7,7 @@
   --dark-grey: #585858;
   --white: #FDFDFD;
   --radius:2rem;
-  --box-shadow: 6px 9px 19px -6px rgba(0,0,0,0.38); }
+  --box-shadow: 6px 9px 19px -6px rgba(0,0,0,0.28); }
 
 *,
 *::after,
@@ -64,7 +64,8 @@ img {
   justify-content: space-between;
   padding: 1.5rem;
   margin: 1rem 0;
-  color: var(--primary-dark); }
+  color: var(--primary-dark);
+  box-shadow: var(--box-shadow); }
 
 .searchbar {
   width: 100%; }
@@ -91,6 +92,8 @@ img {
   justify-content: space-around;
   font-size: 3rem;
   color: var(--white); }
+  .navbar__container > * {
+    box-shadow: var(--box-shadow); }
 
 .btn__notification--container {
   display: flex;
