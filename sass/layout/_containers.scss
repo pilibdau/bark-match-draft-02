@@ -12,6 +12,11 @@
     justify-content: space-between;
     padding: 1.5rem;
     margin: 1rem 0;
+    color:var(--primary-dark);
+}
+
+.searchbar {
+    width: 100%;
 }
 
 .cards__container {
@@ -20,6 +25,7 @@
     margin:auto;
     border-radius: var(--radius);
     position: relative;
+    height: 80rem;
 }
 
 .card {
@@ -32,9 +38,27 @@
     position: absolute;
 }
 
+.navbar__container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    color: var(--white);
+}
 
-@media screen and (max-width: 420px) {
+
+.btn__notification--container {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 421px) {
     .content__container {
         max-height: 220vw;
     }
+
+    .cards__container {
+        height: 165vw;
+    }
+
 }
