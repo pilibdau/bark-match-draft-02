@@ -1,14 +1,18 @@
 .card {
-    width: 95%;
-    padding: 1rem;
+
     background-color: var(--white);
     border-radius: var(--radius);
     margin: 2rem auto;
     box-shadow: var(--box-shadow);
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    width: 80%;
 
     &--detail__container {
-        margin: 0.5rem 0.5rem;
+        margin: 1.5rem 0;
         font-weight: 900;
         font-size: 2.4rem;
 
@@ -33,5 +37,12 @@
     &:nth-child(3){
         z-index: 1;
         transform: translateY(8rem) scale(80%);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card {
+        padding: 0.2rem;
+        padding-top: 1rem;
     }
 }

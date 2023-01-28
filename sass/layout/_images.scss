@@ -1,5 +1,14 @@
-img {
-    width: 100%;
+.card img {
+    object-fit: cover;
+    object-position: center;
+    width: 80%;
+    height: 80%;
     border-radius: var(--radius);
-    margin: auto;
+}
+
+@media screen and (max-width: 420px) {
+    img {
+        width: auto;
+        height: 90%;
+    }
 }
